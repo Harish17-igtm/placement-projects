@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    background-color: rgb(20, 20, 20);
+    width: 80px;
+    height: 90px;
+    border-radius: 50% 50% 25% 25%;
+    margin: 0 auto;
+    margin-top: 100px; 
+    margin-bottom: 3px;  
+}
+.eye{
+    display: flex;
+    justify-content: space-around;
+}
+.left_eye{
+    background-color: rgb(8, 243, 114);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.right_eye{
+    background-color:rgb(8, 243, 114);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.middle_body{
+    width: 130px;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    margin: 0 auto;
+}
+
+ .middle{
+    background-color: black;
+
+    width: 120px;
+    height: 130px;
+    border-radius: 10px 10px 10px 10px;
+ }   
+.left_hand{
+    background-color: black;
+    width: 20px;
+    height: 70px;
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+
+}
+.right_hand{
+    background-color: black;
+    width: 20px;
+    height: 70px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+}
+.left_leg{
+    background-color:black;
+    width: 15px;
+    height: 75px;
+    border-radius: 5px 5px 5px 5px;
+}
+.right_leg{
+    background-color:black;
+    width: 15px;
+    height: 75px;
+    border-radius: 5px 5px 5px 5px;
+}
+.leg{
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: -35px;
+}
+
+.Rambo:hover .head,
+.Rambo:hover .middle,
+.Rambo:hover .left_hand,
+.Rambo:hover .left_leg,
+.Rambo:hover .right_hand,
+.Rambo:hover .right_leg
+
+{
+  background-color:rgb(1, 37, 1)
+}
+
+.Rambo:hover .head{
+    animation: head_1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head_1{
+    0%{
+        width: 120px;
+    }
+    50%{
+        width:150px;
+    }
+    100%{
+        width: 120px;
+    }
+   
+}
+.Rambo:hover .middle{
+    animation: middle_1;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes middle_1{
+    0%{
+        width: 120px;
+    }
+    50%{
+        width: 20px;
+    }
+    75%{
+        width: 180px; 
+    }
+    100%{
+        width: 120px;
+    }
+   
+}
+
+.Rambo:hover .left_hand{
+    animation: lh_1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+
+@keyframes lh_1{
+    0%{
+        height: 80px;
+        transform: rotate(0deg);
+    }
+    50%{
+        height: 100px;
+        transform: rotate(10deg);
+
+    }
+    75%{
+        height: 120px; 
+        transform: rotate(12deg);
+
+    }
+    100%{
+        height:80px;
+        transform: rotate(0deg);
+
+    }
+}
+
+.Rambo:hover .right_hand{
+    animation: rh_1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+
+
+@keyframes rh_1{
+    0%{
+        height: 80px;
+        transform: rotate(0deg);
+    }
+    50%{
+        height: 100px;
+        transform: rotate(-10deg);
+
+    }
+    75%{
+        height: 120px;
+        transform: rotate(-12deg);
+ 
+    }
+    100%{
+        height:80px;
+        transform: rotate(0deg);
+
+    }
+}
+.Rambo:hover .left_leg{
+    animation: lg_1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+
+}
+
+@keyframes lg_1{
+    0%{
+        height: 100px;
+        transform: rotate(0deg);
+        
+
+    }
+    50%{
+        height: 120px;
+        transform: rotate(10deg);
+    }
+    75%{
+        height: 140px; 
+        transform: rotate(12deg);
+    }
+    100%{
+        height:100px;
+        transform: rotate(0deg);
+    }
+}
+.Rambo:hover .right_leg{
+    animation: rg_1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+
+}
+
+@keyframes rg_1{
+    0%{
+        height: 100px;
+        transform: rotate(0deg);
+    }
+    50%{
+        height: 120px;
+        transform: rotate(-10deg);
+    }
+    75%{
+        height: 140px; 
+        transform: rotate(-12deg);
+    }
+    100%{
+        height:100px;
+        transform: rotate(0deg);
+    }
+}
