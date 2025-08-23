@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+}
+nav {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: #38bdf8;
+}
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  display: none;
+  color: #ffffff;
+}
+#welcome {
+  display: block;
+  text-align: center;
+}
+#welcome h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+#welcome p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+section h2 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
